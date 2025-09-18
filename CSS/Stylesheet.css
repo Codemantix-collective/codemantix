@@ -13,7 +13,7 @@ html {
 body {
     font-family: 'Inter', sans-serif;
     color: #333;
-    background: #939eae;
+    background: #1E3A8A;
     line-height: 1.6;
     font-size: 16px;
     overflow-x: hidden;
@@ -170,8 +170,6 @@ ul li a {
 
 .about {
     background: #ffffff;
-    border-radius: 0.8rem;
-    max-width: 1440px;
     margin: 5rem auto;
     padding: 2rem 1rem 5rem;
     text-align: center;
@@ -217,8 +215,6 @@ ul li a {
 
 .features {
     background: #ffffff;
-    border-radius: 0.8rem;
-    max-width: 1440px;
     margin: 5rem auto;
     padding: 2rem 1rem 5rem;
     text-align: center;
@@ -269,10 +265,13 @@ ul li a {
 /* Services Section */
 
 .services {
-    max-width: 1440px;
+    /* max-width: 1440px; */
     margin: 5rem auto;
-    padding: 2rem 1rem;
+    padding: 2rem 1rem 5rem 1rem;
+    /* border-radius: 15px; */
     text-align: center;
+    background-color: white;
+
 }
 
 .services h2 {
@@ -320,7 +319,7 @@ ul li a {
 /* Why Choose Us Section */
 
 .why-choose-us {
-    background: #1E3A8A;
+    background: #ffffff;
     padding: 5rem 1rem;
     text-align: center;
 }
@@ -351,7 +350,8 @@ ul li a {
 /* Process Section */
 
 .process {
-    max-width: 1440px;
+   
+    background-color: #ffffff;
     margin: 5rem auto;
     padding: 2rem 1rem;
     text-align: center;
@@ -396,7 +396,8 @@ ul li a {
 /* Portfolio Section */
 
 .portfolio {
-    max-width: 1440px;
+    background: #ffffff;
+   
     margin: 5rem auto;
     padding: 2rem 1rem;
     text-align: center;
@@ -643,11 +644,14 @@ iframe:hover {
 /* Footer */
 
 footer {
-    background: #1E3A8A;
+    background: white;
+    max-width: 1440px;
+    margin: 5rem auto 2rem auto;
+    border-radius: 0.8rem;
 }
 
 .footer-container {
-    max-width: 1440px;
+    
     margin: 0 auto;
     padding: 3rem 1rem;
     display: grid;
@@ -674,7 +678,7 @@ footer {
 
 .footer-links ul li a,
 .footer-contact ul li a {
-    color: #d1d5db;
+    color: #F97316;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -700,13 +704,13 @@ footer {
 }
 
 .footer-bottom {
-    color: #d1d5db;
+    color: #F97316;
     text-align: center;
     padding: 1rem;
 }
 
 .footer-legal a {
-    color: #d1d5db;
+    color:#F97316;
     margin: 0 1rem;
     text-decoration: none;
 }
