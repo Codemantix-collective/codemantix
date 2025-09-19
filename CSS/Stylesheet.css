@@ -271,7 +271,6 @@ ul li a {
     /* border-radius: 15px; */
     text-align: center;
     background-color: white;
-
 }
 
 .services h2 {
@@ -350,7 +349,6 @@ ul li a {
 /* Process Section */
 
 .process {
-   
     background-color: #ffffff;
     margin: 5rem auto;
     padding: 2rem 1rem;
@@ -397,7 +395,6 @@ ul li a {
 
 .portfolio {
     background: #ffffff;
-   
     margin: 5rem auto;
     padding: 2rem 1rem;
     text-align: center;
@@ -485,161 +482,6 @@ ul li a {
 
 /* Contact Section */
 
-.contact {
-    max-width: 1440px;
-    margin: 5rem auto;
-    padding: 2rem 1rem;
-    text-align: center;
-}
-
-.contact form h2 {
-    text-align: left;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-}
-
-.contact h2 {
-    font-size: 2.5rem;
-    color: #F97316;
-    margin-bottom: 2rem;
-}
-
-.contact-container {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.contact-form {
-    background: #1E3A8A;
-    padding: 2rem;
-    padding-top: 0.01rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-.form-group {
-    margin-bottom: 1.5rem;
-    text-align: left;
-}
-
-.form-group label {
-    display: block;
-    font-weight: 500;
-    margin-bottom: 0.5rem;
-    color: #ffffff;
-}
-
-.form-group .required {
-    color: #e11d48;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 0.75rem;
-    border: 1px solid #4b4b6b;
-    border-radius: 8px;
-    color: #333;
-    font-size: 1rem;
-    transition: border-color 0.3s ease;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    border-color: #F97316;
-    outline: none;
-}
-
-#countryCode {
-    width: 90px;
-    padding: 0.65rem 0 0.65rem 0.35rem;
-    border-radius: 5px;
-    border-color: #F97316;
-}
-
-.form-btn {
-    background: linear-gradient(90deg, #F97316, #ea580c);
-    color: #fff;
-    border: none;
-    padding: 0.75rem 2rem;
-    border-radius: 50px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.form-btn:hover {
-    background: linear-gradient(90deg, #ea580c, #F97316);
-    transform: translateY(-2px);
-}
-
-main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 1440px;
-    margin: 5rem auto 0 auto;
-    padding-left: 3rem;
-}
-
-main h1 {
-    color: #F97316;
-    font-size: 3rem;
-    margin-bottom: 2rem;
-}
-
-main h2 {
-    color: #F97316;
-    font-size: 2rem;
-    margin: 1.5rem 0 1rem 0
-}
-
-main h3 {
-    font-size: 500;
-}
-
-main ul {
-    display: flex;
-    flex-direction: column;
-    margin-top: 0.5rem;
-}
-
-.customer-support {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-}
-
-.contact {
-    flex-basis: 100%;
-}
-
-.radio {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-/* LOCATION MAP  */
-
-.location-map {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    padding-left: 5rem;
-    margin-bottom: 5rem;
-}
-
-iframe {
-    border-radius: 0.5rem;
-    transition: all 0.3s ease;
-}
-
-iframe:hover {
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
-}
-
 
 /* Footer */
 
@@ -651,7 +493,6 @@ footer {
 }
 
 .footer-container {
-    
     margin: 0 auto;
     padding: 3rem 1rem;
     display: grid;
@@ -710,7 +551,7 @@ footer {
 }
 
 .footer-legal a {
-    color:#F97316;
+    color: #F97316;
     margin: 0 1rem;
     text-decoration: none;
 }

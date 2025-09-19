@@ -1,0 +1,51 @@
+@media (max-width: 1024px) {
+    .contact-cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .contact-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .contact-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 2rem;
+    }
+    .nav-desktop {
+        display: block;
+    }
+    .menu-toggle {
+        display: none;
+    }
+    .hero-title {
+        font-size: 4rem;
+    }
+    .hero-description {
+        font-size: 1.5rem;
+    }
+    .support-info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .form-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .radio-group {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .cta-title {
+        font-size: 3.5rem;
+    }
+    .footer-content {
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+    .footer-bottom {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
