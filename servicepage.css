@@ -325,7 +325,7 @@
             margin-bottom: 20px;
             opacity: 0;
             transform: translateY(30px);
-            animation: fadeInUp 0.6s ease-out 0.2s forwards;
+            animation: fadeInRight 0.6s ease-out 0.2s forwards;
             display: inline-block;
             position: relative;
         }
@@ -349,7 +349,7 @@
             margin-bottom: 30px;
             opacity: 0;
             transform: translateY(30px);
-            animation: fadeInUp 0.6s ease-out 0.4s forwards;
+            animation: fadeInLeft 0.6s ease-out 0.4s forwards;
             line-height: 1.2;
         }
         
@@ -410,7 +410,7 @@
         }
         
         .service-card.animate {
-            animation: fadeInUp 0.6s ease-out forwards;
+            animation: fadeInLeft 0.6s ease-out forwards;
         }
         
         /* Service Icon */
@@ -520,7 +520,7 @@
             z-index: 2;
             opacity: 0;
             transform: translateY(30px);
-            animation: fadeInUp 0.6s ease-out forwards;
+            animation: fadeInRight 0.6s ease-out forwards;
         }
         
         .step-number {
@@ -575,7 +575,7 @@
         }
         
         .testimonial.animate {
-            animation: fadeInUp 0.6s ease-out forwards;
+            animation: fadeInLeft 0.6s ease-out forwards;
         }
         
         .testimonial-content {
@@ -649,7 +649,7 @@
         }
         
         .faq-item.animate {
-            animation: fadeInUp 0.6s ease-out forwards;
+            animation: fadeInRight 0.6s ease-out forwards;
         }
         
         .faq-question {
@@ -906,6 +906,26 @@
             25% { transform: scale(1.1) rotate(5deg); }
             75% { transform: scale(1.05) rotate(-2deg); }
         }
+        @keyframes fadeInRight {
+    from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+        @keyframes fadeInLeft {
+    from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
         
         /* Responsive Design */
         @media (max-width: 1024px) {
