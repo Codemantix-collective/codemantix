@@ -3,21 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Codemantix-service.html</title>
-    <!-- css -->/
+    <title>Our Services - Codemantix Collective</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="servicepage.css">
+    <link rel="icon" type="image/x-icon" href="image/Codemantix logo(2).png" />
+    <meta name="description" content="Discover Codemantix Collective's comprehensive services including Data Analytics, Graphics Designing, Web Development, and UI/UX Design. Transform your digital presence with our expert solutions." />
+    <meta property="og:title" content="Our Services - Codemantix Collective" />
+    <meta property="og:description" content="Explore our range of services designed to elevate your business. From data analytics to web development, we deliver innovative solutions tailored to your needs." />
 </head>
 <body>
-      <header>
+    <!-- Animated Background Shapes -->
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <header>
         <div class="header-section">
             <div class="logo">
                 <img src="image/Codemantix logo(2).png" alt="Codemantix Collective Logo" />
             </div>
-            <nav>
+            <nav id="main-nav">
                 <ul>
-                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="servicepage.html">Services</a></li>
+                    <li class="active"><a href="servicepage.html">Services</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li class="first-contactlink"><a href="contactPage.html">Contact</a></li>
                 </ul>
@@ -26,19 +38,31 @@
                 <li class="second-contactlink"><a href="contactPage.html">Contact</a></li>
             </ul>
             <button class="menu-toggle" aria-label="Toggle navigation menu">
-					<i class="fas fa-bars"></i>
-				</button>
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
-    </header> 
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Transform Your Digital Presence</h1>
+            <p>We create innovative digital solutions that drive growth and elevate your brand in the competitive market</p>
+            <div class="hero-buttons">
+                <a href="#services" class="btn btn-primary">Explore Services</a>
+                <a href="contactPage.html" class="btn btn-secondary">Get in Touch</a>
+            </div>
+        </div>
+    </section>
 
     <!-- Services Section -->
-    <section class="services-section">
+    <section id="services" class="services-section">
         <div class="container">
             <!-- Header -->
-            <div class="header">
-                <p class="services-label">SERVICES</p>
-                <h1 class="main-title">Our Services</h1>
-                <p class="subtitle">
+            <div class="section-header">
+                <p class="section-label">SERVICES</p>
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">
                     We provide comprehensive digital solutions designed to elevate your business and drive sustainable growth. 
                     Our expert team delivers innovative strategies tailored to your unique needs.
                 </p>
@@ -60,6 +84,11 @@
                     <p class="service-description">
                         Transform your raw data into actionable insights with our advanced analytics solutions. We help businesses make data-driven decisions through comprehensive reporting, predictive modeling, and real-time dashboards.
                     </p>
+                    <div class="service-features">
+                        <span class="feature-tag">Big Data</span>
+                        <span class="feature-tag">Visualization</span>
+                        <span class="feature-tag">Predictive Analysis</span>
+                    </div>
                 </div>
 
                 <!-- Graphics Designing -->
@@ -75,6 +104,11 @@
                     <p class="service-description">
                         Create stunning visual identities that captivate your audience. Our design team crafts compelling graphics, logos, branding materials, and digital assets that communicate your brand's unique story and values.
                     </p>
+                    <div class="service-features">
+                        <span class="feature-tag">Branding</span>
+                        <span class="feature-tag">Illustration</span>
+                        <span class="feature-tag">Marketing Materials</span>
+                    </div>
                 </div>
 
                 <!-- Web Development -->
@@ -89,6 +123,11 @@
                     <p class="service-description">
                         Build powerful, scalable web applications tailored to your business needs. From responsive websites to complex web platforms, we deliver high-performance solutions using cutting-edge technologies.
                     </p>
+                    <div class="service-features">
+                        <span class="feature-tag">Frontend</span>
+                        <span class="feature-tag">Backend</span>
+                        <span class="feature-tag">E-commerce</span>
+                    </div>
                 </div>
 
                 <!-- UI/UX Design -->
@@ -103,13 +142,18 @@
                     <p class="service-description">
                         Design intuitive user experiences that delight and engage. Our UX/UI specialists create user-centered designs that improve conversion rates, enhance usability, and deliver exceptional digital experiences.
                     </p>
+                    <div class="service-features">
+                        <span class="feature-tag">Wireframing</span>
+                        <span class="feature-tag">Prototyping</span>
+                        <span class="feature-tag">User Testing</span>
+                    </div>
                 </div>
             </div>
 
             <!-- CTA Button -->
-            <div class="cta-container">
+            <!-- <div class="cta-container">
                 <button class="cta-button"><a href="contactPage.html">Learn More</a></button>
-            </div>
+            </div> -->
 
             <!-- Floating decorative elements -->
             <div class="floating-element element-1"></div>
@@ -117,10 +161,130 @@
             <div class="floating-element element-3"></div>
         </div>
     </section>
+
+    <!-- Process Section -->
+    <section class="process-section">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">PROCESS</p>
+                <h2 class="section-title">Our Working Process</h2>
+                <p class="section-subtitle">
+                    We follow a structured approach to ensure every project is delivered with precision and excellence.
+                </p>
+            </div>
+
+            <div class="process-steps">
+                <div class="process-step" data-delay="0">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">Discovery</h3>
+                    <p class="step-description">We analyze your requirements and understand your business goals.</p>
+                </div>
+                <div class="process-step" data-delay="200">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">Planning</h3>
+                    <p class="step-description">We create a detailed project plan with timelines and milestones.</p>
+                </div>
+                <div class="process-step" data-delay="400">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">Execution</h3>
+                    <p class="step-description">Our team brings your project to life with cutting-edge solutions.</p>
+                </div>
+                <div class="process-step" data-delay="600">
+                    <div class="step-number">4</div>
+                    <h3 class="step-title">Delivery</h3>
+                    <p class="step-description">We deliver the final product and provide ongoing support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">TESTIMONIALS</p>
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-subtitle">
+                    Hear from businesses that have transformed their digital presence with our services.
+                </p>
+            </div>
+
+            <div class="testimonials-container">
+                <div class="testimonial" data-delay="0">
+                    <div class="testimonial-content">
+                        Codemantix transformed our online presence completely. Their data analytics services helped us identify key growth opportunities we had been missing for years.
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John Smith">
+                        </div>
+                        <div class="author-details">
+                            <h4>John Smith</h4>
+                            <p>CEO, TechInnovate Inc.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">FAQ</p>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">
+                    Find answers to common questions about our services and processes.
+                </p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item" data-delay="0">
+                    <div class="faq-question">
+                        How long does a typical project take? <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Project timelines vary based on complexity. A simple website may take 2-4 weeks, while complex web applications can take 3-6 months. We provide a detailed timeline after the discovery phase.
+                    </div>
+                </div>
+                <div class="faq-item" data-delay="100">
+                    <div class="faq-question">
+                        Do you provide ongoing support? <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes, we offer various support packages to ensure your digital solutions continue to perform optimally after launch. This includes maintenance, updates, and technical support.
+                    </div>
+                </div>
+                <div class="faq-item" data-delay="200">
+                    <div class="faq-question">
+                        What industries do you work with? <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        We have experience across multiple industries including healthcare, finance, e-commerce, education, and technology. Our solutions are tailored to meet specific industry requirements.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Transform Your Business?</h2>
+                <p class="cta-text">Let's discuss how our services can help you achieve your goals and drive growth.</p>
+                <button class="cta-button"><a href="contactPage.html">Get Started Today</a></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <div class="footer-container">
             <div class="footer-logo">
                 <img src="image/Codemantix logo(2).png" alt="Codemantix Collective Logo" />
+                <p>Transforming ideas into digital reality</p>
             </div>
             <div class="footer-links">
                 <h3>Quick Links</h3>
@@ -137,41 +301,32 @@
                 <ul>
                     <li>
                         <i class="fas fa-envelope"></i>
-                        <a href="mailto:codemantixcollective@gmail.com">codemantixcollective@gmail.com</a
-							>
-						</li>
-						<li>
-							<i class="fas fa-phone"></i>
-							<a href="tel:+2349014039678">09014039678</a> /
+                        <a href="mailto:codemantixcollective@gmail.com">codemantixcollective@gmail.com</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+2349014039678">09014039678</a> /
                         <a href="tel:+2348057032993">08057032993</a>
                     </li>
                     <li>
                         <i class="fab fa-instagram"></i>
-                        <a href="https://www.instagram.com/codemantix" target="_blank" rel="noopener">Instagram</a
-							>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<hr />
-			<div class="footer-bottom">
-				<p>
-					&copy; <span id="currentYear"></span> Codemantix Collective. All
-					rights reserved.
-				</p>
-				<div class="footer-legal">
-					<a href="/privacy-policy">Privacy Policy</a>
-                        <a href="/terms-of-service">Terms of Service</a>
+                        <a href="https://www.instagram.com/codemantix" target="_blank" rel="noopener">Instagram</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                &copy; <span id="currentYear"></span> Codemantix Collective. All
+                rights reserved.
+            </p>
+            <div class="footer-legal">
+                <a href="/privacy-policy">Privacy Policy</a>
+                <a href="/terms-of-service">Terms of Service</a>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
-</body>
-</html>      
-
-
-    
- <script src="servicepage.js"></script>   
+   <script src="servicepage.js"></script>
 </body>
 </html>
