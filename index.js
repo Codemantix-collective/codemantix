@@ -33,30 +33,88 @@ $(document).ready(function() {
         });
     });
 
-    // GSAP animations
-    gsap.from('.hero-content', { duration: 1, y: 50, opacity: 0, ease: 'power2.out' });
-    gsap.from('.about-card', { duration: 1, y: 50, opacity: 0, stagger: 0.2, scrollTrigger: { trigger: '.about', start: 'top 80%' } });
-    gsap.from('.feature-card', { duration: 1, y: 50, opacity: 0, stagger: 0.2, scrollTrigger: { trigger: '.features', start: 'top 80%' } });
-    gsap.from('.service-card', { duration: 1, y: 50, opacity: 0, stagger: 0.2, scrollTrigger: { trigger: '.services', start: 'top 80%' } });
-    // gsap.from('.portfolio-card', { duration: 1, y: 50, opacity: 0, stagger: 0.2, scrollTrigger: { trigger: '.portfolio', start: 'top 80%' } });
+    // GSAP Animations
+    gsap.registerPlugin(ScrollTrigger);
 
-    // Form validation
-    $('.contact-form').on('submit', function(event) {
-        event.preventDefault();
-        let isValid = true;
-        $(this).find('input[required], textarea[required]').each(function() {
-            if (!$(this).val().trim()) {
-                $(this).addClass('error');
-                isValid = false;
-            } else {
-                $(this).removeClass('error');
-            }
-        });
-        if (isValid) {
-            this.submit();
-            alert('Form submitted successfully!');
-        } else {
-            alert('Please fill out all required fields.');
+    // Hero animations
+    gsap.from('.hero-content', { duration: 1, y: 50, opacity: 0, ease: 'power2.out' });
+
+    // Triple cards stagger animation
+    gsap.from('.triple-card', {
+        duration: 0.8,
+        y: 30,
+        opacity: 0,
+        stagger: 0.2,
+        ease: 'power2.out',
+        scrollTrigger: { trigger: '.about-triple', start: 'top 80%' }
+    });
+
+    // Services stagger animation
+    gsap.from('.service-item', {
+        duration: 0.8,
+        scale: 0.9,
+        opacity: 0,
+        stagger: 0.1,
+        ease: 'back.out(1.7)',
+        scrollTrigger: { trigger: '.services-grid', start: 'top 80%' }
+    });
+
+    // Stats counter animation (simple reveal)
+    gsap.from('.stats-item', {
+        duration: 0.8,
+        y: 30,
+        opacity: 0,
+        stagger: 0.2,
+        ease: 'power2.out',
+        scrollTrigger: { trigger: '.stats', start: 'top 80%' }
+    });
+
+    // Portfolio stagger animation
+    gsap.from('.portfolio-item', {
+        duration: 0.8,
+        y: 30,
+        opacity: 0,
+        stagger: 0.2,
+        ease: 'power2.out',
+        scrollTrigger: { trigger: '.portfolio-grid', start: 'top 80%' }
+    });
+
+    // Team animation
+    gsap.from('.team-content', { duration: 1, scale: 0.9, opacity: 0, ease: 'power2.out', scrollTrigger: { trigger: '.team', start: 'top 80%' } });
+
+    // CTA animation
+    gsap.from('.cta', { duration: 1, y: 50, opacity: 0, scrollTrigger: { trigger: '.cta', start: 'top 80%' } });
+
+    // Parallax effect on hero nav (optional subtle)
+    gsap.to('.hero-nav i', {
+        yPercent: -50,
+        ease: "none",
+        scrollTrigger: {
+            trigger: ".hero",
+            start: "top bottom",
+            end: "bottom top",
+            scrub: true
         }
     });
+
+    // Header scroll effect
+    gsap.to('header', {
+        backgroundColor: 'rgba(255, 255, 255, 0.98)',
+        duration: 0.3,
+        scrollTrigger: {
+            trigger: 'body',
+            start: 'top -10%',
+            toggleActions: 'play none none reverse'
+        }
+    });
+    let lastScrollTop = 0;
+    $(window).scroll(() => {
+        let scrollTop = $(this).scrollTop();
+        if (scrollTop > lastScrollTop) {
+            $('header').addClass('hide')
+        } else {
+            $('header').removeClass('hide');
+        }
+        lastScrollTop = scrollTop;
+    })
 });
